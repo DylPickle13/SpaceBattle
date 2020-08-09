@@ -1,0 +1,56 @@
+20k starting resources
+1 mothership + 2 resource collectors to start
+resource collector holds 2.5k
+asteroid size of max.4 min.2, scaleable 10k, 5 per cluster
+10 sec to full 2.5k collector, 2.5k / 10000 = 0.25 resources/millisecond
+asteroids mass has to correspond to weight of resources to continue
+asteroid mass = 1000 * scale + (0.1 * resources)
+discrepancy: On scratch, mass of asteroid is entirely resource
+on asteroid.java, mass is (scale x 1000) + (0.1 x resources)
+
+asteroid e.x.
+
+asteroid of 20k resources
+2k mass
+2k / 20k = 0.1
+0.1 = mass of one resource
+0.4 mass every 16 millisec
+
+2000 mass + 20000 * 0.1
+2000 + 2000
+4000
+
+
+Ship Costs and Times
+
+Key - 250 resources a second
+
+fighter = 5k - 20s
+resource collector = 10k - 40s
+battleship = 50k - 200s
+bomber = 7.5k - 30s
+laser frigate = 25k - 100s
+scout = 3k - 12s
+space station = 120k - 480s
+
+Colors
+
+Blue: #1a56ba
+Red: #840d24
+Yellow: #ffdf00
+Green: #06bd00
+Light Grey: #8f8f8f
+Dark Grey: #626161
+Purple: #9335ed
+Booster Red: #e32828
+Light Reflective Blue: #b9f8f3
+Dark Reflective Blue: #62eaed
+
+Current Bugs
+
+collision angles
+Zooming and scrolling doesnt go to end of map
+
+https://1drv.ms/f/s!AlCnRNH4jQpukEGCcJZU8joY1gDs
+
+https://www.desmos.com/calculator/b8umwloi9e
